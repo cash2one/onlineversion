@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/outfox/!svn/ver/503021/incubator/Test/EAD/zhangyi/onlineversion/pagination
+END
+middleware.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/outfox/!svn/ver/503021/incubator/Test/EAD/zhangyi/onlineversion/pagination/middleware.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/outfox/!svn/ver/503021/incubator/Test/EAD/zhangyi/onlineversion/pagination/__init__.py
+END
+middleware.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/outfox/!svn/ver/503021/incubator/Test/EAD/zhangyi/onlineversion/pagination/middleware.pyc
+END
+__init__.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/outfox/!svn/ver/503021/incubator/Test/EAD/zhangyi/onlineversion/pagination/__init__.pyc
+END
+tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/outfox/!svn/ver/503021/incubator/Test/EAD/zhangyi/onlineversion/pagination/tests.py
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/outfox/!svn/ver/503021/incubator/Test/EAD/zhangyi/onlineversion/pagination/models.py
+END
+paginator.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/outfox/!svn/ver/503021/incubator/Test/EAD/zhangyi/onlineversion/pagination/paginator.py
+END
+models.pyc
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/outfox/!svn/ver/503021/incubator/Test/EAD/zhangyi/onlineversion/pagination/models.pyc
+END

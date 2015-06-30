@@ -1,0 +1,43 @@
+{% include 'header.html' %}
+{% load i18n %}
+{% load url from future %}
+{% load platFilter %}
+{% load static %}
+
+<div class="hero-unit">
+    <div class="container">
+        <h1>Version online step by step</h1>
+        <!--h2>We help web teams plan, structure and collaborate on content.</h2-->
+
+        <ul class="row ">
+            <li class="span3 plan float-up">
+                <p>选择平台</p>
+                <!--p>Architect &amp; organise your content with drag &amp; drop.</p-->
+                <img src="{% get_static_prefix %}img/1.png" class="img-polaroid">
+            </li>
+
+            <li class="span3 structure float-up">
+                <p>添加产品组</p>
+                <img src="{% get_static_prefix %}img/2.png" class="img-polaroid">
+            </li>
+
+            <li class="span3 collaborate float-up">
+                <p>添加产品</p>
+                <img src="{% get_static_prefix %}img/3.png" class="img-polaroid">
+                <img src="{% get_static_prefix %}img/5.png" class="img-polaroid">
+            </li>
+
+            <li class="span3 deliver float-up">
+                <p>查看产品线上历史版本</p>
+                <img src="{% get_static_prefix %}img/4.png" class="img-polaroid">
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="row get-started-now">
+        <div class="span10 offset8 white-panel button-text-panel">
+            <a href="ead_online_version" class="btn btn-large btn-warning">Get Started Now</a>
+        </div>
+</div>
+

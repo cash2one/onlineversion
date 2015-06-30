@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load url from future %}
+
+{% load static %}
+
+{% block content %}
+      <!--div class="navbar">
+          <div class="navbar-inner">
+              <a class="brand" href="#">
+                  <i class="icon-user"><sub class="icon-pencil"></sub></i>
+                  XmlName
+              </a>
+          </div>
+      </div-->
+    <ul class="breadcrumb">
+        <li>
+            <a href="/ead_online_version">首页</a>
+        </li>
+        <li>
+            / edit
+        </li>
+    </ul>
+    <form enctype="multipart/form-data" action="/product_save" method="POST" name="product_add_save" id="product_add_save">
+    <div class="tab-content">
+          <div id="union" class="tab-pane active" >
+            <div id="column-1" class="column form-column main span9 form-horizontal ui-sortable">
+                <div class="box well fieldset" id="box-11">
+                    <h4 class="box-title">
+                        Edit
+                    </h4>
+                        <div class="box-content ">
+                            <div  class="control-group" >
+                                <label for="PointName_label" class="control-label ">
+                                    产品名称
+                                    <span class="asteriskField">*</span>
+                                </label>
+                                <div class="controls">
+                                    <input class="text-field form-control admintextinputwidget form-control"
+                                           id="id_name" name="productName" type="text" value="{{ product.ProductName }}">
+                                </div>
+                            </div>
+                            <div  class="control-group" >
+                                <label for="PointInitiator_label" class="control-label ">
+                                    产品名称正则
+                                    
+                                </label>
+                                <div class="controls">
+                                    <input class="text-field form-control admintextinputwidget form-control"
+                                           id="id_namereg" name="productNameReg" type="text" value="{{ product.ProductNameReg }}">
+                                </div>
+                            </div>
+                            <div  class="control-group" >
+                                <label for="PointInitiator_label" class="control-label ">
+                                    产品svn正则
+                                    
+                                </label>
+                                <div class="controls">
+                                    <input class="text-field form-control admintextinputwidget form-control"
+                                           id="id_namereg" name="productSvnReg" type="text" value="{{ product.ProductSvnReg }}">
+                                    <input type=hidden name="ProductGroup" value="{{product.ProductGroup}}">
+                                    <input type=hidden name="ProductSetId" value="{{product.ProductSetId}}">
+                                    <input type=hidden name="ProductId" value="{{product.id}}">
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+    <div class="form-actions well well-sm clearfix ">
+          <!--button type="submit" class="default btn btn-primary  hide-xs span1" name="_save" data-loading-text="Saving.." id="product_update">
+            <i class="icon-save"></i> 保存
+          </button-->
+          <a onclick="save_product()" class="default btn btn-primary hide-xs span1" name="_save" data-loading-text="Saving.." id="product_update">
+            <i class="icon-save"></i> Save
+          </a>
+          <a onclick="dismiss_save()" data-toggle="modal" class="btn btn-default pull-right" > 取消</a>
+          <!-- Modal -->
+          <!--div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h3 id="myModalLabel">Confirmation</h3>
+            </div>
+            <div class="modal-body">
+              <p>确定要删除该产品?</p>
+            </div>
+            <div class="modal-footer">
+              <button class="btn" data-dismiss="modal" aria-hidden="true" id="delete_yes">Yes</button>
+              <button class="btn btn-primary" id="delete_no" data-dismiss="modal">No</button>
+            </div>
+          </div-->
+      </div>
+    </form>
+{% endblock %}
+
+{% block script  %}
+    <script src="{% get_static_prefix %}js/onlineversion.js" ></script>
+{% endblock %}

@@ -1,0 +1,70 @@
+{% load static %}
+{% include 'header.html' %}
+
+
+
+
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<!--left-->
+			<div id="left-side" class="span2 hidden-phone">
+				<div class="well sidebar-nav">
+					<ul class="nav nav-list hidden-tablet">
+						<li class="nav-header ">
+							平台分类
+						</li>
+						<li>
+							<a href="/ead_online_version">
+                                广告
+							</a>
+						</li>
+                        <li>
+							<a href="/search_online_version">
+                                搜索
+							</a>
+						</li>
+                        <li>
+							<a href="/armani_online_version">
+                                购物
+							</a>
+						</li>
+                        <li>
+							<a href="/infra_online_version">
+                                infra
+							</a>
+						</li>
+                        <li>
+							<a href="/YNote_online_version">
+                                笔记
+							</a>
+						</li>
+                        <li>
+							<a href="/dict_online_version">
+                                词典
+							</a>
+						</li>
+                        <li>
+							<a href="/fanyi_online_version">
+                                翻译
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--end left-->
+			<!--right-->
+			<div id="content-block" class="span10">
+				<!--ul class="breadcrumb">
+					<li><a href="/">首页</a>
+						<span class="divider">/</span>
+					</li>
+					<li class="active">新的测试</li>
+				</ul-->
+				{% block content %}
+                {% endblock %}
+			</div>
+		</div>
+	</div>
+	{% block script %}{% endblock %}
+ </body>
+</html>
